@@ -1,0 +1,33 @@
+{
+  "name": "contact-book",
+  "version": "1.0.0",
+  "description": "Contact Book APP",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nndouu/contact-book.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nndouu/contact-book/issues"
+  },
+  "homepage": "https://github.com/Nndouu/contact-book#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.2.2",
+    "express": "^4.17.1",
+    "express-validator": "^6.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.6.10"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.2",
+    "nodemon": "^1.19.1"
+  }
+}
