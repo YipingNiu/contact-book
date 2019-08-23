@@ -1,10 +1,13 @@
 const express = require("express");
 const connectDB = require("./config/db");
 
+const app = express();
+
 //Connect Datebase
 connectDB();
 
-const app = express();
+//Init Middleware
+app.use(express.json({ extened: false }));
 
 app.get("/", (req, res) =>
   res.json({ msg: "Welcome to the Contact Book API" })
