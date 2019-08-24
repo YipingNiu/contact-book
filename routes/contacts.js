@@ -67,12 +67,14 @@ router.put("/:id", auth, async (req, res) => {
 
   //Build a contact object
   const contactFields = {};
+  //If has name/email/phone/type,add that to contactField
   if (name) contactFields.name = name;
   if (email) contactFields.email = email;
   if (phone) contactFields.phone = phone;
   if (type) contactFields.type = type;
 
   try {
+    //Find contact by contactID
     let contact = await Contact.findById(req.params.id);
     if (!contact) return res.status(404).json({ msg: "Contact not found" });
     //Make sure user owns contact
@@ -80,11 +82,13 @@ router.put("/:id", auth, async (req, res) => {
       return res.status(401).json({ msg: "Not authorized" });
     }
 
+    //Update contact
     contact = await Contact.findByIdAndUpdate(
       req.params.id,
       {
         $set: contactFields
       },
+      //If this contact not exist,create it
       { new: true }
     );
 
