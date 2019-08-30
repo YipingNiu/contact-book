@@ -7,8 +7,9 @@ const ContactItem = ({ contact }) => {
     <div className='card bg-light my-2 \'>
       <div className='card-body'>
         <h3 className='text-primary text-left'>
-          {name}{" "}
+          {name}
           <span
+            style={{ float: "right", fontSize: "15px" }}
             className={
               "badge " +
               (type === "professional" ? "badge-success" : "badge-warning")
