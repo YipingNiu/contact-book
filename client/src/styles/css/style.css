@@ -1,4 +1,7 @@
 h1 {
   font-size: 25px; }
 
+.list-group li {
+  list-style: none; }
+
 /*# sourceMappingURL=style.css.map */
