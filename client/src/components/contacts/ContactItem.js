@@ -32,7 +32,7 @@ const ContactItem = ({ contact }) => {
             </li>
           )}
         </ul>
-        <p>
+        <p className='pt-3'>
           <button className='btn btn-dark btn-sm'>Edit</button>
           <button className='btn btn-danger btn-sm ml-1'>Delete</button>
         </p>
