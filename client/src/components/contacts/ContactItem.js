@@ -21,7 +21,7 @@ const ContactItem = ({ contact }) => {
             style={{ float: "right", fontSize: "15px" }}
             className={
               "badge " +
-              (type === "professional" ? "badge-success" : "badge-warning")
+              (type === "professional" ? "badge-primary" : "badge-info")
             }
           >
             {type.charAt(0).toUpperCase() + type.slice(1)}
