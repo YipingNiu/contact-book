@@ -4,7 +4,7 @@ export const DELETE_CONTACT = "DELETE_CONTACT";
 export const SET_CURRENT = "SET_CURRENT";
 export const CLEAR_CURRNET = "CLEAR_CURRNET";
 export const UPDATE_CONTACT = "UPDATE_CONTACT";
-export const FILTER_CONTACT = "FILTER_CONTACT";
+export const FILTER_CONTACTS = "FILTER_CONTACTS";
 export const CLEAR_FILTER = "CLEAR_FILTER";
 //import to AlertState
 export const SET_ALERT = "SET_ALERT";

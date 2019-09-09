@@ -97,7 +97,7 @@ const ContactForm = () => {
           onChange={onChange}
           checked={type === "personal"}
         />
-        <label class='form-check-label' for='inlineRadio1'>
+        <label className='form-check-label' htmlFor='inlineRadio1'>
           Personal{" "}
         </label>
       </div>
@@ -110,7 +110,7 @@ const ContactForm = () => {
           onChange={onChange}
           checked={type === "professional"}
         />
-        <label class='form-check-label' for='inlineRadio2'>
+        <label className='form-check-label' htmlFor='inlineRadio2'>
           Professional
         </label>
       </div>
