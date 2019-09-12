@@ -19,12 +19,12 @@ const Register = () => {
   return (
     <div className='row'>
       <div className='col-md-6 mx-auto'>
-        <h1 className='mt-3'>
+        <h1 className='mt-5 text-center'>
           Account <span className='text-primary'>Register</span>
         </h1>
         <form onSubmit={onSubmit}>
           <div className='form-group'>
-            <label htmlFor='name'>name</label>
+            <label htmlFor='name'>Name</label>
             <input
               type='text'
               name='name'
