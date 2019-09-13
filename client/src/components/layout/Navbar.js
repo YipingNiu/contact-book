@@ -47,16 +47,6 @@ const Navbar = ({ title, icon }) => {
           {title}
         </h1>
         <ul className='navbar-nav'>
-          <li className='nav-item'>
-            <Link className='nav-link text-light' to=''>
-              Home
-            </Link>
-          </li>
-          <li className='nav-item'>
-            <Link className='nav-link text-light' to='/about'>
-              About
-            </Link>
-          </li>
           {isAuthenticated ? authLinks : guestLinks}
         </ul>
       </div>
