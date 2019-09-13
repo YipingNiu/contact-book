@@ -56,7 +56,7 @@ const AuthState = props => {
   //Logout
   const logout = () => console.log("logout");
   //Clear Errors
-  const clearErrors = () => console.log("clearErrors");
+  const clearErrors = () => dispatch({ type: CLEAR_ERRORS });
 
   return (
     <AuthContext.Provider
