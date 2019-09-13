@@ -7,7 +7,6 @@ const Register = props => {
   const authContext = useContext(AuthContext);
 
   const { setAlert } = alertContext;
-
   const { register, error, clearErrors, isAuthenticated } = authContext;
 
   //Send error msg if User already exists
