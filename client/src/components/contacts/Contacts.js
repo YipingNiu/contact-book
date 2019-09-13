@@ -9,7 +9,7 @@ const Contacts = () => {
   const { contacts, filtered } = contactContext;
 
   if (contacts.length === 0) {
-    return <h4>Please add a contact</h4>;
+    return <h5 className='text-secondary'>Please add a contact</h5>;
   }
 
   return (
@@ -18,12 +18,12 @@ const Contacts = () => {
         {/* show filtered or all contacts */}
         {filtered !== null
           ? filtered.map(contact => (
-              <CSSTransition key={contact.id} timeout={500} classNames='item'>
+              <CSSTransition key={contact._id} timeout={500} classNames='item'>
                 <ContactItem contact={contact} />
               </CSSTransition>
             ))
           : contacts.map(contact => (
-              <CSSTransition key={contact.id} timeout={500} classNames='item'>
+              <CSSTransition key={contact._id} timeout={500} classNames='item'>
                 <ContactItem contact={contact} />
               </CSSTransition>
             ))}
