@@ -14,7 +14,6 @@ import {
   LOGOUT,
   CLEAR_ERRORS
 } from "../types";
-import { truncate } from "fs";
 
 const AuthState = props => {
   const initialState = {
