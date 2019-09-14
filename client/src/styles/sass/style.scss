@@ -1,4 +1,4 @@
-$primary: #3292a6;
+$primary-green: #58af9b;
 $primary-overlay: rgba(50, 146, 166, 0.9);
 
 h1 {
@@ -25,4 +25,48 @@ h1 {
 .item-exit-active {
   opacity: 0;
   transition: opacity 1000ms ease-in;
+}
+
+//Button
+.btn-register {
+  color: white;
+  background-color: $primary-green;
+  padding: 15px 60px;
+  border: 1px solid white;
+  border-radius: 100px;
+  transition: all 0.1s ease-out;
+
+  &:hover {
+    // background-color: white;
+    // color: $primary-green;
+    transform: scale(1.05);
+    color: white;
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+//overlay
+.overlay {
+  position: absolute;
+  background: url("../../images/main_bg_light.jpg");
+  background-size: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 700px;
+  // background: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+//register-info
+.register-info {
+  margin: 250px auto 250px;
+}
+
+//login-form
+.login-form {
+  margin: 250px auto 250px;
 }

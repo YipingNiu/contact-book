@@ -18,4 +18,33 @@ h1 {
   opacity: 0;
   transition: opacity 1000ms ease-in; }
 
+.btn-register {
+  color: white;
+  background-color: #58af9b;
+  padding: 15px 60px;
+  border: 1px solid white;
+  border-radius: 100px;
+  transition: all 0.1s ease-out; }
+  .btn-register:hover {
+    transform: scale(1.05);
+    color: white; }
+  .btn-register:active {
+    transform: scale(0.95); }
+
+.overlay {
+  position: absolute;
+  background: url("../../images/main_bg_light.jpg");
+  background-size: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 700px;
+  z-index: 1000; }
+
+.register-info {
+  margin: 250px auto 250px; }
+
+.login-form {
+  margin: 250px auto 250px; }
+
 /*# sourceMappingURL=style.css.map */

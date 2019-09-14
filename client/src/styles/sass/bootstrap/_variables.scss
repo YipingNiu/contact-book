@@ -45,7 +45,7 @@ $green:   #28a745 !default;
 $teal:    #20c997 !default;
 $cyan:    #27a0a7 !default;
 $dark-blue:    #2d5d9b !default;
-
+$primary-green: #58AF9B !default;
 
 $colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -68,7 +68,7 @@ $colors: map-merge(
   $colors
 );
 
-$primary:       $dark-blue !default;
+$primary:       $primary-green !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -234,6 +234,8 @@ $line-height-sm:              1.5 !default;
 $border-width:                1px !default;
 $border-color:                $gray-300 !default;
 
+// Change:$border-radius:               .25rem !default;
+// $border-radius-lg:            .3rem !default;
 $border-radius:               .25rem !default;
 $border-radius-lg:            .3rem !default;
 $border-radius-sm:            .2rem !default;
@@ -439,7 +441,7 @@ $btn-link-disabled-color:     $gray-600 !default;
 $btn-block-spacing-y:         .5rem !default;
 
 // Allows for customizing button radius independently from global border radius
-$btn-border-radius:           0px;
+$btn-border-radius:           $border-radius;
 $btn-border-radius-lg:        $border-radius-lg !default;
 $btn-border-radius-sm:        $border-radius-sm !default;
 

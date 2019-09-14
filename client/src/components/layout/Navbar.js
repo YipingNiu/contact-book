@@ -19,11 +19,9 @@ const Navbar = ({ title, icon }) => {
 
   const authLinks = (
     <Fragment>
+      <li className='nav-item nav-link'>Hello {user && user.name}</li>
       <li className='nav-item'>
-        <div className='nav-link'>Hello {user && user.name}</div>
-      </li>
-      <li className='nav-item'>
-        <a onClick={onLogout} href='#!' className='nav-link text-light'>
+        <a onClick={onLogout} href='#!' className='nav-link'>
           <i className='fas fa-sign-out-alt'></i>
           <span className='hide-sm'>Logout</span>
         </a>
@@ -47,7 +45,7 @@ const Navbar = ({ title, icon }) => {
   );
 
   return (
-    <div className='navbar bg-primary text-light navbar-expand'>
+    <div className='navbar bg-primary text-light navbar-expand d-md-none'>
       <div className='container-fluid'>
         <h1 className='mb-0'>
           <i className={icon} />
