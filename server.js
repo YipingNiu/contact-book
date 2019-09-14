@@ -10,9 +10,9 @@ connectDB();
 //Init Middleware
 app.use(express.json({ extened: false }));
 
-app.get("/", (req, res) =>
-  res.json({ msg: "Welcome to the Contact Book API" })
-);
+// app.get("/", (req, res) =>
+//   res.json({ msg: "Welcome to the Contact Book API" })
+// );
 
 //Define Routes
 app.use("/api/users", require("./routes/users"));
