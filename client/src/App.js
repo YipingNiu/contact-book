@@ -33,7 +33,7 @@ const App = () => {
                   <div
                     className='col-12 my-auto p-0'
                     style={{
-                      height: "85vh",
+                      height: "750px",
                       boxShadow: "10px 10px 30px #888888"
                     }}
                   >

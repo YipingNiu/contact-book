@@ -143,10 +143,10 @@ const Register = props => {
         {head}
         {registerForm}
       </div>
-      <div className='col-md-5 order-md-1 p-0 bg-primary my-auto'>
-        <div className='my-auto'>
+      <div className='col-md-5 order-md-1 p-0 bg-primary my-auto h-100'>
+        <div className='my-auto h-100'>
           <div
-            className='overlay-register-info'
+            className='overlay-register-info h-100'
             style={{ height: "85vh", boxShadow: "-10px 10px 30px #888888" }}
           >
             {registerInfo}

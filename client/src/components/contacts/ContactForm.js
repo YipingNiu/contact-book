@@ -53,8 +53,8 @@ const ContactForm = () => {
   };
 
   return (
-    <form className='py-2' onSubmit={onSubmit}>
-      <h2 className='text-primary text-center'>
+    <form className='m-5 contact-form p-5 text-center' onSubmit={onSubmit}>
+      <h2 className='text-primary text-center pb-5'>
         {current ? "Edit Contact" : "Add Contact"}
       </h2>
       <div className='form-group'>
@@ -114,12 +114,12 @@ const ContactForm = () => {
           Professional
         </label>
       </div>
-      <button type='submit' className='btn btn-primary btn-block mt-2'>
+      <button type='submit' className='btn btn-contacts btn-block mt-4'>
         {current ? "Update Contact" : "Add Contact"}
       </button>
       {current && (
         <div>
-          <button className='btn btn-light btn-block' onClick={clearAll}>
+          <button className='btn btn-clear btn-block' onClick={clearAll}>
             Clear
           </button>
         </div>

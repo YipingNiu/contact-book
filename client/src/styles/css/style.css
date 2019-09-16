@@ -130,4 +130,78 @@ body {
     .register-form .btn-register:active {
       transform: scale(0.95); }
 
+.contacts-bg {
+  background: url("../../images/system-3699542_1280.jpg");
+  background-size: cover; }
+
+.filter {
+  border-radius: 100px;
+  border-color: #4e9786; }
+
+.contacts {
+  overflow: scroll;
+  height: 610px; }
+
+.card {
+  border-radius: 20px;
+  background-color: #58af9b;
+  color: #f8f9fa;
+  border: none;
+  opacity: 10%;
+  background-size: cover;
+  box-shadow: 2px 2px 10px #888888; }
+  .card h3 {
+    font-weight: 700; }
+
+.card-overlay {
+  background-image: url("../../images/main_bg.png");
+  background-size: cover; }
+
+.contact-form h2 {
+  font-size: 30pt;
+  font-weight: 700; }
+.contact-form .form-control {
+  background-color: #e9ecef;
+  padding: 25px 5px;
+  border: white; }
+  .contact-form .form-control ::-webkit-input-placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #9b6262;
+    opacity: 1;
+    /* Firefox */ }
+.contact-form h6 {
+  color: #58af9b;
+  font-weight: 700; }
+.contact-form .form-check {
+  color: #58af9b; }
+.contact-form .btn-contacts {
+  color: white;
+  background-color: #58af9b;
+  padding: 10px 80px;
+  border-radius: 100px;
+  transition: all 0.1s ease-out;
+  font-size: 16px;
+  font-weight: 700;
+  box-shadow: 0px 0px 10px #cecbcb; }
+  .contact-form .btn-contacts:hover {
+    transform: scale(1.05);
+    color: white; }
+  .contact-form .btn-contacts:active {
+    transform: scale(0.95); }
+.contact-form .btn-clear {
+  color: #58af9b;
+  border-color: #58af9b;
+  background-color: #f8f9fa;
+  padding: 10px 80px;
+  border-radius: 100px;
+  transition: all 0.1s ease-out;
+  font-size: 16px;
+  font-weight: 700;
+  box-shadow: 0px 0px 10px #cecbcb; }
+  .contact-form .btn-clear:hover {
+    transform: scale(1.05);
+    color: #58af9b; }
+  .contact-form .btn-clear:active {
+    transform: scale(0.95); }
+
 /*# sourceMappingURL=style.css.map */

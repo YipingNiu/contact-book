@@ -202,3 +202,108 @@ body {
     }
   }
 }
+
+//####### Contacts #######
+.contacts-bg {
+  background: url("../../images/system-3699542_1280.jpg");
+  background-size: cover;
+}
+.filter {
+  border-radius: 100px;
+  border-color: #4e9786;
+}
+.contacts {
+  overflow: scroll;
+  height: 610px;
+}
+//Card
+.card {
+  border-radius: 20px;
+  background-color: $primary-green;
+  color: $light;
+  border: none;
+  opacity: 10%;
+  // background: url("../../images/system-3699542_1280.jpg");
+  background-size: cover;
+  box-shadow: 2px 2px 10px #888888;
+  h3 {
+    font-weight: 700;
+  }
+}
+.card-overlay {
+  background-image: url("../../images/main_bg.png");
+  background-size: cover;
+}
+//Contact from
+.contact-form {
+  h2 {
+    font-size: 30pt;
+    font-weight: 700;
+  }
+
+  .form-control {
+    background-color: #e9ecef;
+    padding: 25px 5px;
+    border: white;
+    // box-shadow: 0px 0px 10px #cecbcb;
+    ::-webkit-input-placeholder {
+      /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: rgb(155, 98, 98);
+      opacity: 1; /* Firefox */
+    }
+  }
+  //form check
+  h6 {
+    color: $primary-green;
+    font-weight: 700;
+  }
+  .form-check {
+    color: $primary-green;
+  }
+  //button
+  .btn-contacts {
+    color: white;
+    background-color: $primary-green;
+    padding: 10px 80px;
+    // border: 2px solid white;
+    border-radius: 100px;
+    transition: all 0.1s ease-out;
+    font-size: 16px;
+    font-weight: 700;
+    box-shadow: 0px 0px 10px #cecbcb;
+
+    &:hover {
+      // background-color: white;
+      // color: $primary-green;
+      transform: scale(1.05);
+      color: white;
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+  .btn-clear {
+    color: $primary-green;
+    border-color: $primary-green;
+    background-color: $light;
+    padding: 10px 80px;
+    // border: 2px solid white;
+    border-radius: 100px;
+    transition: all 0.1s ease-out;
+    font-size: 16px;
+    font-weight: 700;
+    box-shadow: 0px 0px 10px #cecbcb;
+
+    &:hover {
+      // background-color: white;
+      // color: $primary-green;
+      transform: scale(1.05);
+      color: $primary-green;
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+}

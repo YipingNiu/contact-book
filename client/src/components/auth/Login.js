@@ -69,10 +69,7 @@ const Login = props => {
     <div className='login-form text-center'>
       <div className='row m-0'>
         <div className='col-md-8 m-auto p-0'>
-          <h1 className='text-center text-primary'>
-            Sign in to Contacter
-            {/* Account <span className='text-primary'>Login</span> */}
-          </h1>
+          <h1 className='text-center text-primary'>Sign in to Contacter</h1>
           <form onSubmit={onSubmit} className='m-4'>
             <div className='form-group'>
               <label htmlFor='email'>Email Address</label>

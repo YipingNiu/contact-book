@@ -13,9 +13,10 @@ const ContactItem = ({ contact }) => {
     clearCurrent();
   };
   return (
-    <div className='card bg-light my-2 \'>
+    <div className='card mx-5 my-2 '>
+      <div className='card-overlay'></div>
       <div className='card-body'>
-        <h3 className='text-primary text-left'>
+        <h3 className='text-light text-left'>
           {name}
           <span
             style={{ float: "right", fontSize: "15px" }}
@@ -31,13 +32,13 @@ const ContactItem = ({ contact }) => {
           {email && (
             <li>
               <i className='fas fa-envelope-open' />
-              {email}
+              &nbsp;&nbsp;{email}
             </li>
           )}
           {phone && (
             <li>
               <i className='fas fa-phone' />
-              {phone}
+              &nbsp;&nbsp;{phone}
             </li>
           )}
         </ul>

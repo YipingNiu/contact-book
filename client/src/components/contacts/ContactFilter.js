@@ -22,14 +22,14 @@ const ContactFilter = () => {
   };
 
   return (
-    <form className='pt-2'>
+    <form className='mx-5 mt-5 mb-3'>
       <div className='form-group'>
         <input
           ref={text}
           type='text'
           placeholder='Filter Contacts...'
           onChange={onChange}
-          className='form-control'
+          className='form-control filter'
         ></input>
       </div>
     </form>
