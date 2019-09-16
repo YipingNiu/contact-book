@@ -1,5 +1,7 @@
-h1 {
-  font-size: 25px; }
+body {
+  font-family: "Montserrat", sans-serif;
+  background: url("../../images/main_bg_light.jpg");
+  background-size: cover; }
 
 .list-group li {
   list-style: none; }
@@ -18,19 +20,6 @@ h1 {
   opacity: 0;
   transition: opacity 1000ms ease-in; }
 
-.btn-register {
-  color: white;
-  background-color: #58af9b;
-  padding: 15px 60px;
-  border: 1px solid white;
-  border-radius: 100px;
-  transition: all 0.1s ease-out; }
-  .btn-register:hover {
-    transform: scale(1.05);
-    color: white; }
-  .btn-register:active {
-    transform: scale(0.95); }
-
 .overlay {
   position: absolute;
   background: url("../../images/main_bg_light.jpg");
@@ -41,10 +30,104 @@ h1 {
   min-height: 700px;
   z-index: 1000; }
 
+.overlay-register-info {
+  background: url("../../images/main_bg.png");
+  background-size: cover;
+  background-position-x: -1300px;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  overflow: hidden; }
+
+.headline {
+  color: #4e9786;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif; }
+
 .register-info {
-  margin: 250px auto 250px; }
+  margin: 200px auto 200px; }
+  .register-info h2 {
+    font-size: 45px;
+    font-weight: 900; }
+  .register-info p {
+    font-size: 18px; }
+  .register-info .btn-register {
+    color: white;
+    padding: 15px 80px;
+    border: 2px solid white;
+    border-radius: 100px;
+    transition: all 0.1s ease-out;
+    font-size: 16px;
+    font-weight: 700; }
+    .register-info .btn-register:hover {
+      transform: scale(1.05);
+      color: white; }
+    .register-info .btn-register:active {
+      transform: scale(0.95); }
 
 .login-form {
-  margin: 250px auto 250px; }
+  margin: 100px auto 100px; }
+  .login-form h1 {
+    font-size: 30pt;
+    font-weight: 800; }
+  .login-form .form-control {
+    background-color: #e9ecef;
+    padding: 25px 5px;
+    border: white; }
+    .login-form .form-control ::placeholder {
+      /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: #9b6262;
+      opacity: 1;
+      /* Firefox */ }
+  .login-form label {
+    color: #4e9786; }
+  .login-form .btn-login {
+    color: white;
+    background-color: #58af9b;
+    padding: 15px 80px;
+    border-radius: 100px;
+    transition: all 0.1s ease-out;
+    font-size: 16px;
+    font-weight: 700;
+    box-shadow: 0px 0px 10px #cecbcb; }
+    .login-form .btn-login:hover {
+      transform: scale(1.05);
+      color: white; }
+    .login-form .btn-login:active {
+      transform: scale(0.95); }
+
+.register-form {
+  margin: 50px auto 100px; }
+  .register-form h1 {
+    font-size: 30pt;
+    font-weight: 800; }
+  .register-form .form-control {
+    background-color: #e9ecef;
+    padding: 25px 5px;
+    border: white; }
+    .register-form .form-control ::-webkit-input-placeholder {
+      /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: #9b6262;
+      opacity: 1;
+      /* Firefox */ }
+  .register-form label {
+    color: #4e9786; }
+  .register-form .btn-register {
+    color: white;
+    background-color: #58af9b;
+    padding: 15px 80px;
+    border-radius: 100px;
+    transition: all 0.1s ease-out;
+    font-size: 16px;
+    font-weight: 700;
+    box-shadow: 0px 0px 10px #cecbcb; }
+    .register-form .btn-register:hover {
+      transform: scale(1.05);
+      color: white; }
+    .register-form .btn-register:active {
+      transform: scale(0.95); }
 
 /*# sourceMappingURL=style.css.map */

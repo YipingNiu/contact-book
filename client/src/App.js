@@ -29,13 +29,23 @@ const App = () => {
             <Fragment>
               <Navbar />
               <div className='container'>
-                <Alerts />
-                <Switch>
-                  <PrivateRoute exact path='/' component={Home} />
-                  <Route exact path='/about' component={About} />
-                  <Route exact path='/register' component={Register} />
-                  <Route exact path='/login' component={Login} />
-                </Switch>
+                <div className='row' style={{ height: "100vh" }}>
+                  <div
+                    className='col-12 my-auto p-0'
+                    style={{
+                      height: "85vh",
+                      boxShadow: "10px 10px 30px #888888"
+                    }}
+                  >
+                    <Alerts />
+                    <Switch>
+                      <PrivateRoute exact path='/' component={Home} />
+                      <Route exact path='/about' component={About} />
+                      <Route exact path='/register' component={Register} />
+                      <Route exact path='/login' component={Login} />
+                    </Switch>
+                  </div>
+                </div>
               </div>
             </Fragment>
           </Router>
