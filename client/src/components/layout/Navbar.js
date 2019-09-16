@@ -45,13 +45,9 @@ const Navbar = ({ title, icon }) => {
   );
 
   return (
-    <div className='navbar bg-primary text-light navbar-expand d-md-none'>
+    <div className='navbar text-primary navbar-expand fixed-top '>
       <div className='container-fluid '>
-        <h1 className='mb-0'>
-          <i className={icon} />
-          {title}
-        </h1>
-        <ul className='navbar-nav'>
+        <ul className='navbar-nav pull-right'>
           {isAuthenticated ? authLinks : guestLinks}
         </ul>
       </div>

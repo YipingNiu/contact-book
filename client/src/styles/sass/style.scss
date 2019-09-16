@@ -14,6 +14,16 @@ body {
   background-size: cover;
 }
 
+.navbar {
+  .navbar-nav {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    color: $primary-green-dark;
+    font-size: 16px;
+    float: left;
+  }
+}
+
 .list-group li {
   list-style: none;
 }
@@ -219,7 +229,8 @@ body {
 //Card
 .card {
   border-radius: 20px;
-  background-color: $primary-green;
+  // background-color: $primary-green;
+  background-color: rgba(88, 175, 155, 0.95);
   color: $light;
   border: none;
   opacity: 10%;
@@ -232,14 +243,14 @@ body {
   }
   .btn-edit {
     color: white;
-    background-color: #386172;
+    background-color: #486775;
     // padding: 10px 80px;
     // border: 2px solid white;
     border-radius: 100px;
     transition: all 0.1s ease-out;
     font-size: 16px;
     font-weight: 700;
-    box-shadow: 2px 2px 5px #386172;
+    box-shadow: 2px 2px 5px #486775;
 
     &:hover {
       // background-color: white;
@@ -254,7 +265,8 @@ body {
   }
   .btn-delete {
     color: white;
-    background-color: #e75052;
+    background-color: #e76c6e;
+
     // padding: 10px 80px;
     // border: 2px solid white;
     border-radius: 100px;

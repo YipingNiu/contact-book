@@ -30,19 +30,19 @@ const ContactItem = ({ contact }) => {
           </h3>
           <ul className='list-group'>
             {email && (
-              <li>
+              <li className='mb-1'>
                 <i className='fas fa-envelope-open' />
                 &nbsp;&nbsp;{email}
               </li>
             )}
             {phone && (
-              <li>
+              <li className=''>
                 <i className='fas fa-phone' />
                 &nbsp;&nbsp;{phone}
               </li>
             )}
           </ul>
-          <p className='pt-3'>
+          <p className='pt-2'>
             <button
               className='btn btn-edit btn-sm'
               //Set current contact when click Edit btn
