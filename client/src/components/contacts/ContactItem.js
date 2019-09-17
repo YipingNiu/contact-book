@@ -13,7 +13,7 @@ const ContactItem = ({ contact }) => {
     clearCurrent();
   };
   return (
-    <div className='card mx-5 my-2 '>
+    <div className='card mx-5 my-2 animated jello'>
       <div className='card-overlay'>
         <div className='card-body'>
           <h3 className='text-left'>

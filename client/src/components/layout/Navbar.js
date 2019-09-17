@@ -45,11 +45,9 @@ const Navbar = ({ title, icon }) => {
   );
 
   return (
-    <div className='navbar text-primary navbar-expand fixed-top '>
+    <div className='navbar text-primary navbar-expand fixed-top'>
       <div className='container-fluid '>
-        <ul className='navbar-nav pull-right'>
-          {isAuthenticated ? authLinks : guestLinks}
-        </ul>
+        <ul className='navbar-nav ml-auto'>{isAuthenticated && authLinks}</ul>
       </div>
     </div>
   );

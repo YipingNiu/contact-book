@@ -1,6 +1,5 @@
 import React, { useState, useContext, useEffect, Fragment } from "react";
 import ContactContext from "../../context/contact/contactContext";
-import logo from "../../images/logo.png";
 
 const ContactForm = () => {
   const contactContext = useContext(ContactContext);
@@ -53,17 +52,12 @@ const ContactForm = () => {
     clearCurrent();
   };
 
-  const head = (
-    <h1 className='mx-5 mt-1 headline'>
-      <img className='mb-1' src={logo} alt='Logo' height='50' width='50'></img>
-      Contacter
-    </h1>
-  );
-
   return (
     <Fragment>
-      {head}
-      <form className='m-5 contact-form p-5 text-center' onSubmit={onSubmit}>
+      <form
+        className='contact-form text-center mx-5 mt-5 pt-5'
+        onSubmit={onSubmit}
+      >
         <h2 className='text-primary text-center pb-5'>
           {current ? "Edit Contact" : "Add Contact"}
         </h2>

@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import "./styles/css/bootstrap.css";
 import "./styles/css/style.css";
+import "./styles/css/animate.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
 import Home from "./components/pages/Home";
