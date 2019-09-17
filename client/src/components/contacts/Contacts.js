@@ -15,11 +15,17 @@ const Contacts = () => {
   }, []);
 
   if (contacts !== null && contacts.length === 0 && !loading) {
-    return <h5 className='text-secondary'>Please add a contact</h5>;
+    return (
+      <h5 className='text-primary welcome text-center'>
+        Welcome Friend! <br />
+        You could add your contacts now!
+      </h5>
+    );
   }
 
   return (
     <Fragment>
+      {" "}
       {/* If contact not null and not loading ,show contacts.Else show spinner */}
       {contacts !== null && !loading ? (
         <TransitionGroup>

@@ -28,23 +28,25 @@ const App = () => {
         <ContactState>
           <Router>
             <Fragment>
-              <Navbar />
-              <div className='container'>
-                <div className='row' style={{ height: "100vh" }}>
-                  <div
-                    className='col-12 my-auto p-0'
-                    style={{
-                      height: "750px",
-                      boxShadow: "10px 10px 30px #888888"
-                    }}
-                  >
-                    <Alerts />
-                    <Switch>
-                      <PrivateRoute exact path='/' component={Home} />
-                      <Route exact path='/about' component={About} />
-                      <Route exact path='/register' component={Register} />
-                      <Route exact path='/login' component={Login} />
-                    </Switch>
+              <div className='main-overlay'>
+                <Navbar />
+                <div className='container'>
+                  <div className='row' style={{ height: "100vh" }}>
+                    <div
+                      className='col-12 my-auto p-0'
+                      style={{
+                        height: "750px",
+                        boxShadow: "10px 10px 30px #888888"
+                      }}
+                    >
+                      <Alerts />
+                      <Switch>
+                        <PrivateRoute exact path='/' component={Home} />
+                        <Route exact path='/about' component={About} />
+                        <Route exact path='/register' component={Register} />
+                        <Route exact path='/login' component={Login} />
+                      </Switch>
+                    </div>
                   </div>
                 </div>
               </div>

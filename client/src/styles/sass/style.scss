@@ -2,16 +2,19 @@ $primary-green: #58af9b;
 
 $primary-green-dark: #4e9786;
 $primary-green-rg: rgba(88, 175, 155, 1);
-$primary-overlay: rgba(100, 190, 190, 0.9);
+$primary-overlay: rgba(231, 238, 238, 0.788);
 $light: #f8f9fa;
 
 body {
-  // font-family: initial;
   // font-family: "Open Sans", sans-serif;
   font-family: "Montserrat", sans-serif;
   // background-color: $primary-overlay;
-  // background-size: cover;
   background: url("../../images/main_bg_light.jpg");
+  background-size: cover;
+}
+
+.main-overlay {
+  background: url("../../images/main_bg_overlay.png");
   background-size: cover;
 }
 
@@ -29,7 +32,7 @@ body {
   list-style: none;
 }
 
-// Animation
+// ######### Animation #########
 .item-enter {
   opacity: 0;
 }
@@ -47,7 +50,55 @@ body {
   transition: opacity 500ms ease-in;
 }
 
-//overlay
+//flipOutX
+@-webkit-keyframes flipOutX {
+  from {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+
+  30% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    opacity: 0;
+  }
+}
+
+@keyframes flipOutX {
+  from {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+
+  30% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    opacity: 0;
+  }
+}
+
+.flipOutX {
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-name: flipOutX;
+  animation-name: flipOutX;
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+}
+
+//########## overlay #########
 .overlay {
   position: absolute;
   background: url("../../images/main_bg_light.jpg");
@@ -226,6 +277,12 @@ body {
 .contacts {
   overflow: scroll;
   height: 610px;
+}
+.welcome {
+  margin: 250px auto 300px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
 }
 //Card
 .card {
