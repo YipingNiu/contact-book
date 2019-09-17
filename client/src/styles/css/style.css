@@ -55,7 +55,7 @@ body {
   font-family: "Open Sans", sans-serif; }
 
 .register-info {
-  margin: 200px auto 200px; }
+  margin: 230px auto 200px; }
   .register-info h2 {
     font-size: 45px;
     font-weight: 900; }
@@ -76,7 +76,7 @@ body {
       transform: scale(0.95); }
 
 .login-form {
-  margin: 100px auto 100px; }
+  margin: 130px auto 100px; }
   .login-form h1 {
     font-size: 30pt;
     font-weight: 800; }
@@ -156,7 +156,8 @@ body {
   border: none;
   opacity: 10%;
   background-size: cover;
-  box-shadow: 2px 2px 10px #888888; }
+  box-shadow: 2px 2px 10px #888888;
+  min-height: 194px; }
   .card h3 {
     font-weight: 600;
     color: #f8ebd6; }

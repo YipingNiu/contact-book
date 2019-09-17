@@ -42,7 +42,7 @@ const ContactItem = ({ contact }) => {
               </li>
             )}
           </ul>
-          <p className='pt-2'>
+          <p className='pt-2 fixed-bottom ml-3'>
             <button
               className='btn btn-edit btn-sm'
               //Set current contact when click Edit btn
