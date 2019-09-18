@@ -31,6 +31,9 @@ body {
   opacity: 0;
   transition: opacity 500ms ease-in; }
 
+.fade-exit-done {
+  opacity: 0; }
+
 @-webkit-keyframes flipOutX {
   from {
     -webkit-transform: perspective(400px);
@@ -229,6 +232,14 @@ body {
       color: white; }
     .card .btn-delete:active {
       transform: scale(0.95); }
+  .card .badge-professional {
+    background-color: #7677c2;
+    border-radius: 100px;
+    position: relative; }
+  .card .badge-personal {
+    background-color: #4b87aa;
+    border-radius: 100px;
+    position: relative; }
 
 .card-overlay {
   background-image: url("../../images/main_bg.png");

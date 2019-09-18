@@ -49,6 +49,9 @@ body {
   opacity: 0;
   transition: opacity 500ms ease-in;
 }
+.fade-exit-done {
+  opacity: 0;
+}
 
 //flipOutX
 @-webkit-keyframes flipOutX {
@@ -344,6 +347,20 @@ body {
     &:active {
       transform: scale(0.95);
     }
+  }
+  .badge-professional {
+    background-color: #7677c2;
+    border-radius: 100px;
+    position: relative;
+    // left: 30px;
+    // padding: 6px;
+  }
+  .badge-personal {
+    background-color: #4b87aa;
+    border-radius: 100px;
+    position: relative;
+    // left: 30px;
+    // padding: 6px;
   }
 }
 .card-overlay {

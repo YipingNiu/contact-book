@@ -88,6 +88,8 @@ const Register = props => {
                 value={name}
                 onChange={onChange}
                 className='form-control'
+                placeholder='Enter your name'
+                aria-label='Enter your name'
                 required
               ></input>
             </div>
@@ -99,6 +101,8 @@ const Register = props => {
                 value={email}
                 onChange={onChange}
                 className='form-control'
+                placeholder='Enter your email '
+                aria-label='Enter your email'
                 required
               ></input>
             </div>
@@ -110,6 +114,8 @@ const Register = props => {
                 value={password}
                 onChange={onChange}
                 className='form-control'
+                placeholder='Enter your password '
+                aria-label='Enter your password'
                 required
                 minLength='6'
               ></input>
@@ -122,6 +128,8 @@ const Register = props => {
                 value={password2}
                 onChange={onChange}
                 className='form-control'
+                placeholder='Confirm your email '
+                aria-label='Confirm your email'
                 required
                 minLength='6'
               ></input>

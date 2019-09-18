@@ -1,6 +1,6 @@
 import React, { Fragment, useContext } from "react";
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import AuthContext from "../../context/auth/authContext";
 import ContactContext from "../../context/contact/contactContext";
 
@@ -29,20 +29,20 @@ const Navbar = ({ title, icon }) => {
     </Fragment>
   );
 
-  const guestLinks = (
-    <Fragment>
-      <li className='nav-item'>
-        <Link className='nav-link text-light' to='/register'>
-          Register
-        </Link>
-      </li>
-      <li className='nav-item'>
-        <Link className='nav-link text-light' to='/login'>
-          Login
-        </Link>
-      </li>
-    </Fragment>
-  );
+  // const guestLinks = (
+  //   <Fragment>
+  //     <li className='nav-item'>
+  //       <Link className='nav-link text-light' to='/register'>
+  //         Register
+  //       </Link>
+  //     </li>
+  //     <li className='nav-item'>
+  //       <Link className='nav-link text-light' to='/login'>
+  //         Login
+  //       </Link>
+  //     </li>
+  //   </Fragment>
+  // );
 
   return (
     <div className='navbar text-primary navbar-expand fixed-top'>
