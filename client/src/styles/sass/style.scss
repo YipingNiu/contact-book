@@ -9,10 +9,16 @@ body {
   // font-family: "Open Sans", sans-serif;
   font-family: "Montserrat", sans-serif;
   // background-color: $primary-overlay;
-  background: url("../../images/main_bg_light.jpg");
-  background-size: cover;
+  // background: url("../../images/main_bg_light.jpg");
+  // background-size: cover;
 }
-
+//particles background
+.particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: $light;
+}
 .main-overlay {
   background: url("../../images/main_bg_overlay.png");
   background-size: cover;

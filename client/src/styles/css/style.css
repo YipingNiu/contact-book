@@ -1,7 +1,11 @@
 body {
-  font-family: "Montserrat", sans-serif;
-  background: url("../../images/main_bg_light.jpg");
-  background-size: cover; }
+  font-family: "Montserrat", sans-serif; }
+
+.particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #f8f9fa; }
 
 .main-overlay {
   background: url("../../images/main_bg_overlay.png");
