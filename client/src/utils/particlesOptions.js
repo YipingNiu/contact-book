@@ -1,7 +1,7 @@
 const particlesOptions = {
   particles: {
     number: {
-      value: 80,
+      value: 100,
       density: {
         enable: true,
         value_area: 700
@@ -45,7 +45,7 @@ const particlesOptions = {
       distance: 150,
       color: "#4e9786",
       opacity: 0.4,
-      width: 1
+      width: 1.1
     },
     move: {
       enable: true,
