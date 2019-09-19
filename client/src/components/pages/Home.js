@@ -22,7 +22,10 @@ const Home = () => {
   );
 
   return (
-    <div className='row bg-light h-100 m-0'>
+    <div
+      className='row bg-light h-100 w-100 m-0'
+      style={{ position: "absolute" }}
+    >
       <div className='col-lg-6 p-0 bg-light addContacts'>
         {head}
         <div className='col-md-10 m-auto p-0'>

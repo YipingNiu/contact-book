@@ -39,14 +39,14 @@ body {
 }
 
 // ######### Animation #########
-
+//Card animation
 .item-enter {
-  opacity: 0;
+  animation-name: flipInX;
+  animation-duration: 750ms;
 }
-.item-enter-active {
-  opacity: 1;
-
-  transition: opacity 500ms ease-in;
+.item-enter.item-enter-active {
+  animation-name: flipInX;
+  animation-duration: 750ms;
 }
 
 .item-exit {
@@ -58,33 +58,38 @@ body {
   animation-name: flipOutX;
   animation-duration: 750ms;
 }
+// Login and register animation
+.switch-enter {
+  animation-name: fadeIn;
+  animation-duration: 750ms;
+}
+.switch-enter.switch-enter-active {
+  animation-name: fadeIn;
+  animation-duration: 750ms;
+}
+
+.switch-exit {
+  animation-name: flipOutY;
+  animation-duration: 750ms;
+}
+
+.switch-exit.switch-exit-active {
+  animation-name: flipOutY;
+  animation-duration: 750ms;
+}
 
 //########## overlay #########
-.overlay {
-  position: absolute;
-  background: url("../../images/main_bg_light.jpg");
-  background-size: 100%;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 700px;
-  // background: rgba(0, 0, 0, 0.7);
-  z-index: 1000;
-}
+
 .overlay-register-info {
-  // position: absolute;
   background: url("../../images/main_bg.png");
   background-size: cover;
-  // background-size: 2800px;
   background-position-x: -1300px;
-  // background-position-y: 100px;
   background-repeat: no-repeat;
 
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  // background: rgba(45, 134, 130, 0.7);
   z-index: 10000;
   overflow: hidden;
 }
@@ -267,6 +272,9 @@ body {
     background-color: #486775;
     // padding: 10px 80px;
     // border: 2px solid white;
+    position: relative;
+    top: 25px;
+    right: 20px;
     border-radius: 100px;
     transition: all 0.1s ease-out;
     font-size: 16px;
@@ -295,6 +303,9 @@ body {
     font-size: 16px;
     font-weight: 700;
     box-shadow: 2px 2px 5px #c94548;
+    position: relative;
+    top: 25px;
+    right: 20px;
 
     &:hover {
       // background-color: white;

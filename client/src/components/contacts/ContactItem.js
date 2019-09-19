@@ -14,7 +14,7 @@ const ContactItem = ({ contact }) => {
   };
 
   return (
-    <div className={`card mx-5 my-2 animated jello`}>
+    <div className={"card mx-5 my-2 "}>
       <div className='card-overlay'>
         <div className='card-body'>
           <h3 className='text-left'>
@@ -45,7 +45,7 @@ const ContactItem = ({ contact }) => {
               </li>
             )}
           </ul>
-          <p className='pt-2 fixed-bottom ml-3'>
+          <p className='pt-2 ml-3'>
             <button
               className='btn btn-edit btn-sm'
               //Set current contact when click Edit btn

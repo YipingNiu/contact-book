@@ -109,7 +109,7 @@ const Login = props => {
   );
 
   return (
-    <div className='row m-0 h-100'>
+    <div className='row m-0 h-100 w-100' style={{ position: "absolute" }}>
       <div className='col-md-7 p-0 bg-light h-100'>
         {head}
         {loginForm}

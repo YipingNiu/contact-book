@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
 import "./styles/css/bootstrap.css";
 import "./styles/css/style.css";
 import "./styles/css/animate.css";
@@ -42,12 +43,29 @@ const App = () => {
                     }}
                   >
                     <Alerts />
-                    <Switch>
-                      <PrivateRoute exact path='/' component={Home} />
-                      <Route exact path='/about' component={About} />
-                      <Route exact path='/register' component={Register} />
-                      <Route exact path='/login' component={Login} />
-                    </Switch>
+                    <Route
+                      render={({ location }) => (
+                        <TransitionGroup>
+                          <CSSTransition
+                            key={location.key}
+                            timeout={750}
+                            classNames='switch'
+                            appear={false}
+                          >
+                            <Switch>
+                              <PrivateRoute exact path='/' component={Home} />
+                              <Route exact path='/about' component={About} />
+                              <Route
+                                exact
+                                path='/register'
+                                component={Register}
+                              />
+                              <Route exact path='/login' component={Login} />
+                            </Switch>
+                          </CSSTransition>
+                        </TransitionGroup>
+                      )}
+                    />
                   </div>
                 </div>
               </div>

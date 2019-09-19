@@ -22,11 +22,12 @@ body {
   list-style: none; }
 
 .item-enter {
-  opacity: 0; }
+  animation-name: flipInX;
+  animation-duration: 750ms; }
 
-.item-enter-active {
-  opacity: 1;
-  transition: opacity 500ms ease-in; }
+.item-enter.item-enter-active {
+  animation-name: flipInX;
+  animation-duration: 750ms; }
 
 .item-exit {
   animation-name: flipOutX;
@@ -36,15 +37,21 @@ body {
   animation-name: flipOutX;
   animation-duration: 750ms; }
 
-.overlay {
-  position: absolute;
-  background: url("../../images/main_bg_light.jpg");
-  background-size: 100%;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 700px;
-  z-index: 1000; }
+.switch-enter {
+  animation-name: fadeIn;
+  animation-duration: 750ms; }
+
+.switch-enter.switch-enter-active {
+  animation-name: fadeIn;
+  animation-duration: 750ms; }
+
+.switch-exit {
+  animation-name: flipOutY;
+  animation-duration: 750ms; }
+
+.switch-exit.switch-exit-active {
+  animation-name: flipOutY;
+  animation-duration: 750ms; }
 
 .overlay-register-info {
   background: url("../../images/main_bg.png");
@@ -180,6 +187,9 @@ body {
   .card .btn-edit {
     color: white;
     background-color: #486775;
+    position: relative;
+    top: 25px;
+    right: 20px;
     border-radius: 100px;
     transition: all 0.1s ease-out;
     font-size: 16px;
@@ -197,7 +207,10 @@ body {
     transition: all 0.1s ease-out;
     font-size: 16px;
     font-weight: 700;
-    box-shadow: 2px 2px 5px #c94548; }
+    box-shadow: 2px 2px 5px #c94548;
+    position: relative;
+    top: 25px;
+    right: 20px; }
     .card .btn-delete:hover {
       transform: scale(1.05);
       color: white; }
