@@ -14,6 +14,7 @@ const Home = () => {
     //eslint-disable-next-line
   }, []);
 
+  //Head line with logo
   const head = (
     <h1 className='mx-5 mt-3 headline'>
       <img className='mb-1' src={logo} alt='Logo' height='50' width='50'></img>

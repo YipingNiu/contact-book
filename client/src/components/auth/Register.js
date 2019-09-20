@@ -49,6 +49,7 @@ const Register = props => {
     }
   };
 
+  //Register Info part
   const registerInfo = (
     <div className='register-info'>
       <div className='text-center'>
@@ -64,6 +65,7 @@ const Register = props => {
     </div>
   );
 
+  //Head line with logo
   const head = (
     <h1 className='m-3 headline'>
       <img className='mb-1' src={logo} alt='Logo' height='50' width='50'></img>
@@ -71,14 +73,12 @@ const Register = props => {
     </h1>
   );
 
+  //Register form part
   const registerForm = (
     <div className='register-form text-center'>
       <div className='row m-0'>
         <div className='col-md-8 m-auto p-0'>
-          <h1 className='text-center text-primary'>
-            Create Account
-            {/* Account <span className='text-primary'>Login</span> */}
-          </h1>
+          <h1 className='text-center text-primary'>Create Account</h1>
           <form onSubmit={onSubmit} className='m-4'>
             <div className='form-group'>
               <label htmlFor='name'>Name</label>
